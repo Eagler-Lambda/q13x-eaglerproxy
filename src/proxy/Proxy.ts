@@ -227,7 +227,7 @@ export class Proxy extends EventEmitter {
         const loginPacket = new CSLoginPacket().deserialize(firstPacket);
         player.state = Enums.ClientState.PRE_HANDSHAKE;
         if (loginPacket.gameVersion != VANILLA_PROTOCOL_VERSION) {
-          player.disconnect(`${Enums.ChatColor.RED}Please connect to this proxy on EaglercraftX 1.8.9.`);
+          player.disconnect(`${Enums.ChatColor.RED}Please connect to this proxy on Eaglercraft Lambda 1.9.`);
           return;
         } else if (loginPacket.networkVersion != NETWORK_VERSION) {
           player.disconnect(`${Enums.ChatColor.RED}Your EaglercraftX version is too ${loginPacket.networkVersion > NETWORK_VERSION ? "new" : "old"}! Please ${loginPacket.networkVersion > NETWORK_VERSION ? "downgrade" : "update"}.`);
