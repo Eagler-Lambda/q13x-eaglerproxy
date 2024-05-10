@@ -13,8 +13,8 @@ export namespace Enums {
   }
 
   export enum ChannelMessageType {
-    CLIENT = 0x17,
-    SERVER = 0x3f,
+    CLIENT = 0x09,
+    SERVER = 0x18,
   }
 
   export enum EaglerSkinPacketId {
